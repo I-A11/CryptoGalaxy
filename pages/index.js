@@ -4,7 +4,10 @@ import { Roboto } from "next/font/google";
 import HomeHero from "@/components/Home/HomeHero";
 import PageLayout from "@/components/layout/PageLayout";
 
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
