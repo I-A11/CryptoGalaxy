@@ -37,22 +37,3 @@ const Header = () => {
 };
 
 export default Header;
-/*  <div className={styles.navCenter}>
-        <div className={styles.logoContainer}>
-          <span className={styles.logo}>
-            <span className={styles.logoIcon}>
-              <BsRocketTakeoff fill='#ea6b3d' size={30} />
-            </span>
-            CryptoGalaxy
-          </span>
-          <GiHamburgerMenu className={styles.bars} fill='#fff' size={30} />
-        </div>
-        <div className={styles.linksContainer}>
-          <ul>
-            <li>home</li>
-            <li>home</li>
-            <li>home</li>
-            <li>home</li>
-          </ul>
-        </div>
-      </div> */
