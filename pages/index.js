@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Roboto } from "next/font/google";
 import HomeHero from "@/components/Home/HomeHero";
 import PageLayout from "@/components/layout/PageLayout";
+import Sidebar from "@/components/common/Sidebar";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
@@ -21,6 +22,7 @@ export default function Home() {
       <main className={roboto.className}>
         <PageLayout>
           <HomeHero />
+          <Sidebar />
         </PageLayout>
       </main>
     </>

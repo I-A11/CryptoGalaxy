@@ -1,6 +1,8 @@
 .navbar {
   background: linear-gradient(210.01deg, #1712f3 18%, #4353ff 50%);
   box-shadow: var(--light-shadow);
+  width: 100%;
+  position: fixed;
 }
 
 .navHeader {
@@ -11,7 +13,7 @@
 }
 
 .logoText {
-  color: #fff;
+  color: var(--white);
   font-size: 1.7rem;
   letter-spacing: var(--spacing);
   margin-bottom: 5px;
@@ -47,7 +49,7 @@
 .links {
   display: flex;
   gap: 2rem;
-  color: #fff;
+  color: var(--white);
   font-size: 1.2rem;
 }
 
@@ -56,22 +58,26 @@
   gap: 1rem;
 }
 
-.login {
+.login,
+.signUp {
   background: #ea6b3d;
   border: transparent;
-  padding: 0.5rem;
-  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
   border-radius: 50px;
-  /* border-radius: var(--radius); */
-  font-weight: 600;
-  color: #fff;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.login {
+  background: transparent;
 }
 
 @media (max-width: 1020px) {
   .navToggle {
     display: flex;
     font-size: 1.8rem;
-    color: #fff;
+    color: var(--white);
     background: transparent;
     border-color: transparent;
     cursor: pointer;

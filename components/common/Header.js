@@ -3,8 +3,10 @@ import Logo from "@/assets/logos/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { BsRocketTakeoff } from "react-icons/bs";
 import styles from "./Header.module.css";
+import { useGlobalContext } from "@/context/context";
 
 const Header = () => {
+  const { isSidebarOpen, openSidebar, closeSidebar } = useGlobalContext();
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
@@ -21,13 +23,13 @@ const Header = () => {
             <li>Features</li>
             <li>Explore</li>
             <li>Blog</li>
-            <li>About</li>
+            <li>Wallet</li>
           </ul>
         </div>
         <div className={styles.user}>
           <button className={styles.login}>Login</button>
-          <button className={styles.login}>Sign Up</button>
-          <button className={styles.navToggle}>
+          <button className={styles.signUp}>Sign Up</button>
+          <button onClick={openSidebar} className={styles.navToggle}>
             <RxHamburgerMenu />
           </button>
         </div>
