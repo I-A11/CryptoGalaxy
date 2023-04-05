@@ -6,7 +6,7 @@ import styles from "./Header.module.css";
 import { useGlobalContext } from "@/context/context";
 
 const Header = () => {
-  const { isSidebarOpen, openSidebar, closeSidebar } = useGlobalContext();
+  const { openSidebar } = useGlobalContext();
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
