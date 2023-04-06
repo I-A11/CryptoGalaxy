@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "@/assets/logos/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { BsRocketTakeoff } from "react-icons/bs";
@@ -11,19 +12,35 @@ const Header = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <div className={styles.logo}>
+          <Link className={styles.logo} href='/'>
             <span className={styles.logoIcon}>
               <BsRocketTakeoff size={30} />
             </span>
             <span className={styles.logoText}>CryptoGalaxy</span>
-          </div>
+          </Link>
         </div>
         <div className={styles.linksContainer}>
           <ul className={styles.links}>
-            <li>Features</li>
-            <li>Explore</li>
-            <li>Blog</li>
-            <li>Wallet</li>
+            <li>
+              <Link className={styles.link} href='/features'>
+                Features
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.link} href='/explore'>
+                Explore
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.link} href='/blog'>
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.link} href='/wallet'>
+                Wallet
+              </Link>
+            </li>
           </ul>
         </div>
         <div className={styles.user}>

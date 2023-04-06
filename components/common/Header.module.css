@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(210.01deg, #1712f3 18%, #4353ff 50%);
+  background: var(--background);
   box-shadow: var(--light-shadow);
   width: 100%;
   position: fixed;
@@ -25,7 +25,7 @@
 }
 
 .logoIcon {
-  color: #ea6b3d;
+  color: var(--orange);
   margin-right: 5px;
 }
 
@@ -49,8 +49,15 @@
 .links {
   display: flex;
   gap: 2rem;
-  color: var(--white);
   font-size: 1.2rem;
+}
+
+.link {
+  color: var(--white);
+}
+
+.link:hover {
+  color: var(--orange);
 }
 
 .user {
@@ -60,7 +67,7 @@
 
 .login,
 .signUp {
-  background: #ea6b3d;
+  background: var(--orange);
   border: transparent;
   padding: 0.5rem 0.75rem;
   font-size: 0.9rem;

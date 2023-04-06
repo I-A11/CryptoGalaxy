@@ -1,4 +1,5 @@
 import { useGlobalContext } from "@/context/context";
+import Link from "next/link";
 import { BsRocketTakeoff } from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
 import { MdOutlineFeaturedPlayList } from "react-icons/md";
@@ -19,12 +20,12 @@ const Sidebar = () => {
         }
       >
         <div className={styles.sidebarHeader}>
-          <div className={styles.logo}>
+          <Link className={styles.logo} href='/'>
             <span className={styles.logoIcon}>
               <BsRocketTakeoff size={30} />
             </span>
             <span className={styles.logoText}>CryptoGalaxy</span>
-          </div>
+          </Link>
           <button onClick={closeSidebar} className={styles.closeBtn}>
             <FaTimes />
           </button>
@@ -32,20 +33,28 @@ const Sidebar = () => {
         <div className={styles.linksContainer}>
           <ul className={styles.links}>
             <li>
-              <MdOutlineFeaturedPlayList />
-              Features
+              <Link className={styles.link} href='/features'>
+                <MdOutlineFeaturedPlayList />
+                Features
+              </Link>
             </li>
             <li>
-              <MdTravelExplore />
-              Explore
+              <Link className={styles.link} href='/explore'>
+                <MdTravelExplore />
+                Explore
+              </Link>
             </li>
             <li>
-              <SiBlogger />
-              Blog
+              <Link className={styles.link} href='/blog'>
+                <SiBlogger />
+                Blog
+              </Link>
             </li>
             <li>
-              <BsWallet />
-              Wallet
+              <Link className={styles.link} href='/wallet'>
+                <BsWallet />
+                Wallet
+              </Link>
             </li>
           </ul>
         </div>

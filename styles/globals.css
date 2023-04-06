@@ -3,11 +3,13 @@
 :root {
   --gray-700: #414b56;
   --gray-800: #1f2937;
-  --blue-primary: #49a6e9;
+  --blue-primary: #4353ff;
+  --background: linear-gradient(210.01deg, #1712f3 18%, #4353ff 50%);
   --red: #bb2525;
   --green: #25bb32;
   --black: #222;
   --white: #fff;
+  --orange: #ea6b3d;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
