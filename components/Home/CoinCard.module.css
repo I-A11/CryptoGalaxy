@@ -1,6 +1,14 @@
 .cardContainer {
   background: var(--white);
-  width: 18rem;
-  height: 20rem;
+  width: 15rem;
+  height: 18rem;
   border-radius: var(--radius);
+}
+
+.cardHeader {
+  display: flex;
+}
+
+.cardBody {
+  display: flex;
 }
