@@ -20,10 +20,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={roboto.className}>
-        <PageLayout>
-          <HomeHero />
-          <Sidebar />
-        </PageLayout>
+        {/* <PageLayout> */}
+        <HomeHero />
+        <Sidebar />
+        {/* </PageLayout> */}
       </main>
     </>
   );

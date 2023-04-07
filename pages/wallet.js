@@ -1,7 +1,11 @@
 import React from "react";
 
 const wallet = () => {
-  return <div>wallet</div>;
+  return (
+    <div className='headerBottom'>
+      <h1>Wallet</h1>
+    </div>
+  );
 };
 
 export default wallet;
