@@ -1,0 +1,22 @@
+.coinsContainer {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.coinsContainer h2 {
+  font-size: 2.2rem;
+}
+
+.coinsContainer p {
+  width: 50%;
+  font-size: 1rem;
+  margin: 2rem auto;
+}
+
+.cardSlider {
+  background: var(--background);
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}

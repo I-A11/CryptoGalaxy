@@ -11,9 +11,11 @@
 }
 
 .textContainer h1 {
-  color: var(--gray-800);
   letter-spacing: var(--spacing);
   font-size: 3.5rem;
+}
+.textContainer span {
+  color: var(--gray-800);
 }
 
 .textContainer h3 {

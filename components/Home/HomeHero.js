@@ -7,7 +7,9 @@ const HomeHero = () => {
     <div className='section'>
       <div className={styles.heroContainer}>
         <div className={styles.textContainer}>
-          <h1>Cryptocurrency Exchange </h1>
+          <h1 className='text-gradient'>
+            Cryptocurrency <span>Exchange</span>{" "}
+          </h1>
           <div className='underline'></div>
           <h3>Journey Starts HERE</h3>
           <p>
@@ -25,6 +27,7 @@ const HomeHero = () => {
           <Image width={550} src={Rocket} alt='Rocket image' />
         </div>
       </div>
+      <div className='underline underline-center'></div>
     </div>
   );
 };

@@ -13,7 +13,7 @@
   --orange: #ea6b3d;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
-  --radius: 0.25rem;
+  --radius: 1rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
@@ -83,6 +83,12 @@ p {
   }
 }
 
+.text-gradient {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(8deg, #1712f3 10%, #4353ff);
+}
+
 .headerBottom {
   padding-top: 10rem;
 }
@@ -92,6 +98,10 @@ p {
   width: 30%;
   margin-top: -10px;
   margin-bottom: 2rem;
+}
+.underline-center {
+  width: 20%;
+  margin: 2rem auto;
 }
 
 .primaryBtn {
