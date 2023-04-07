@@ -1,5 +1,72 @@
 .heroContainer {
-  height: 800px;
-  /* background: linear-gradient(210.01deg, #1712f3 18%, #4353ff 50%); */
-  padding-top: 15rem;
+  padding: 10rem 0 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  padding: 0 2rem 0 1rem;
+  width: 100%;
+}
+
+.textContainer h1 {
+  color: var(--gray-800);
+  letter-spacing: var(--spacing);
+  font-size: 3.5rem;
+}
+
+.textContainer h3 {
+  color: var(--gray-800);
+  letter-spacing: var(--spacing);
+  font-size: 2rem;
+}
+.textContainer p {
+  margin: 2rem 0;
+}
+
+.imgContainer {
+  width: 80%;
+}
+
+@media (max-width: 980px) {
+  .heroContainer {
+    padding-left: 10rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .imgContainer {
+    display: none;
+  }
+  .heroContainer {
+    padding: 10rem 0 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .heroContainer {
+    padding: 10rem 0 0 1rem;
+  }
+
+  .textContainer h1 {
+    font-size: 2.5rem;
+  }
+  .textContainer h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 360px) {
+  .heroContainer {
+    padding: 10rem 0 0 0.5rem;
+  }
+  .textContainer h1 {
+    font-size: 1.9rem;
+  }
+  .textContainer h3 {
+    font-size: 1.2rem;
+  }
 }

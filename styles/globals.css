@@ -5,6 +5,7 @@
   --gray-800: #1f2937;
   --blue-primary: #4353ff;
   --background: linear-gradient(210.01deg, #1712f3 18%, #4353ff 50%);
+  --orange-background: linear-gradient(210.01deg, #ff440a 18%, #fe8b04 50%);
   --red: #bb2525;
   --green: #25bb32;
   --black: #222;
@@ -84,4 +85,25 @@ p {
 
 .headerBottom {
   padding-top: 10rem;
+}
+
+.underline {
+  border-top: solid 4px var(--orange);
+  width: 30%;
+  margin-top: -10px;
+  margin-bottom: 2rem;
+}
+
+.primaryBtn {
+  background: var(--background);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background: var(--orange-background);
 }

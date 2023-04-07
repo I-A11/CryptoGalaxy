@@ -67,7 +67,7 @@
 
 .login,
 .signUp {
-  background: var(--orange);
+  background: var(--orange-background);
   border: transparent;
   padding: 0.5rem 0.75rem;
   font-size: 0.9rem;
