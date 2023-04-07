@@ -1,28 +1,18 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState } from "react";
 import CoinCard from "./CoinCard";
+import { useGlobalContext } from "@/context/context";
 import styles from "./HomeCoinsCards.module.css";
 
-const url =
-  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=aud&order=market_cap_desc&per_page=10&page=1&sparkline=false";
-
 const HomeCoinsCards = () => {
-  const [coins, setCoins] = useState([]);
+  const { coins, loading } = useGlobalContext();
 
-  const fetchCoins = async () => {
-    try {
-      const res = await axios(url);
-      const data = res.data;
-      // console.log(data);
-      setCoins(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    fetchCoins();
-  }, []);
+  if (loading) {
+    return (
+      <div>
+        <h1>Loading</h1>
+      </div>
+    );
+  }
 
   return (
     <div className='section'>
@@ -36,8 +26,17 @@ const HomeCoinsCards = () => {
           believable.
         </p>
         <div className={styles.cardSlider}>
-          <CoinCard />
-          <CoinCard />
+          {coins.map((coin) => {
+            const {
+              id,
+              name,
+              image,
+              symbol,
+              price_change_percentage_24h,
+              current_price,
+            } = coin;
+            return <CoinCard key={id} {...coin} />;
+          })}
         </div>
       </section>
     </div>
