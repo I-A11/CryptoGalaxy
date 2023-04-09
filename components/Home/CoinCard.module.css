@@ -1,14 +1,56 @@
 .cardContainer {
   background: var(--white);
-  width: 15rem;
+  min-width: 15rem;
   height: 18rem;
   border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .cardHeader {
   display: flex;
+  align-items: center;
+}
+.cardHeader img {
+  margin-right: 0.5rem;
+}
+
+.coinName {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.coinSymbol {
+  color: var(--gray-700);
+}
+
+.underline {
+  border: 0.5px solid #bbb2b2;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .cardBody {
+  margin-top: 1rem;
   display: flex;
+}
+
+.price {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.change {
+  font-weight: 500;
+  transform: translateY(-20px);
+}
+
+.coinPercentRed {
+  color: var(--red);
+}
+.coinPercentGreen {
+  color: var(--green);
 }
