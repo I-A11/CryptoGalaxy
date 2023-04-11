@@ -39,7 +39,7 @@ const CoinCard = ({
         </div>
       </div>
       <div className={styles.cardChart}>
-        <di>chart</di>
+        <div>chart</div>
       </div>
     </div>
   );
