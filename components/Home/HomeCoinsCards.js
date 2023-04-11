@@ -3,8 +3,23 @@ import CoinCard from "./CoinCard";
 import { useGlobalContext } from "@/context/context";
 import styles from "./HomeCoinsCards.module.css";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const HomeCoinsCards = () => {
   const { coins, loading } = useGlobalContext();
+  // Slick-Slider setting
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
 
   if (loading) {
     return (
@@ -26,17 +41,12 @@ const HomeCoinsCards = () => {
           believable.
         </p>
         <div className={styles.cardSlider}>
-          {coins.map((coin) => {
-            const {
-              id,
-              name,
-              image,
-              symbol,
-              price_change_percentage_24h,
-              current_price,
-            } = coin;
-            return <CoinCard key={id} {...coin} />;
-          })}
+          <Slider {...settings}>
+            {coins.map((coin) => {
+              const { id } = coin;
+              return <CoinCard key={id} {...coin} />;
+            })}
+          </Slider>
         </div>
       </section>
     </div>

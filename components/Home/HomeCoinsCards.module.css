@@ -16,9 +16,6 @@
 .cardSlider {
   background: var(--background);
   height: 30rem;
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  gap: 1rem;
+  padding: 5rem 4rem;
   border-radius: var(--radius);
 }

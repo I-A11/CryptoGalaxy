@@ -1,11 +1,12 @@
 .cardContainer {
   background: var(--white);
-  min-width: 15rem;
+  max-width: 15rem;
   height: 18rem;
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin: 0.2rem;
 }
 
 .cardHeader {
