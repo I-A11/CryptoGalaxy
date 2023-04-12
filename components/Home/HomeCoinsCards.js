@@ -38,7 +38,10 @@ const HomeCoinsCards = () => {
         <p>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some look even slightly
-          believable.
+          believable. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Saepe accusantium voluptatum inventore consequuntur nobis fugit sequi
+          a quo atque, cum explicabo laborum minus omnis! Quisquam autem quo non
+          dolor soluta.
         </p>
         <div className={styles.cardSlider}>
           <Slider {...settings}>
@@ -49,6 +52,7 @@ const HomeCoinsCards = () => {
           </Slider>
         </div>
       </section>
+      <div className='underline underline-center'></div>
     </div>
   );
 };
