@@ -49,9 +49,24 @@
   transform: translateY(-20px);
 }
 
-.coinPercentRed {
+.coinPercentRed,
+.low {
   color: var(--red);
 }
-.coinPercentGreen {
+.coinPercentGreen,
+.high {
   color: var(--green);
+}
+
+.cardInfo {
+  font-weight: 500;
+  color: var(--gray-700);
+  margin-top: -1.5rem;
+}
+
+.cap {
+  text-align: left;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  color: var(--gray-700);
 }

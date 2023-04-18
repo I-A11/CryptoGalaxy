@@ -13,6 +13,9 @@ const CoinCard = ({
   symbol,
   current_price,
   price_change_percentage_24h,
+  high_24h,
+  low_24h,
+  market_cap,
 }) => {
   return (
     <div className={styles.cardContainer}>
@@ -38,8 +41,18 @@ const CoinCard = ({
           )}
         </div>
       </div>
-      <div className={styles.cardChart}>
-        <div>chart</div>
+      <div className={styles.cardInfo}>
+        <div>
+          <div>
+            High-24 Price: <span className={styles.high}>{high_24h}</span>
+          </div>
+          <div>
+            Low-24 Price: <span className={styles.low}>{low_24h}</span>
+          </div>
+        </div>
+      </div>
+      <div className={styles.cap}>
+        Market Cap: <span>{priceFormat.format(market_cap)}</span>
       </div>
     </div>
   );
