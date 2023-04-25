@@ -3,6 +3,7 @@
   box-shadow: var(--light-shadow);
   width: 100%;
   position: fixed;
+  z-index: 999;
 }
 
 .navHeader {

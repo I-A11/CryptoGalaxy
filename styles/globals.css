@@ -1,6 +1,7 @@
 /* Variables */
 
 :root {
+  --gray-400: #838c96;
   --gray-700: #414b56;
   --gray-800: #1f2937;
   --blue-primary: #4353ff;
@@ -10,7 +11,7 @@
   --green: #24922d;
   --black: #222;
   --white: #fff;
-  --orange: #ea6b3d;
+  --orange: #f35827;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 1rem;
@@ -99,6 +100,12 @@ p {
   margin-top: -10px;
   margin-bottom: 2rem;
 }
+.underlineGray {
+  border-top: solid 2px var(--gray-400);
+  width: 50%;
+  margin: 1rem auto 2rem auto;
+}
+
 .underline-center {
   width: 20%;
   margin: 2rem auto;

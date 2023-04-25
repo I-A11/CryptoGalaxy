@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Rocket from "@/assets/rocket.png";
+import Rocket from "@/assets/images/rocket.png";
 import styles from "./HomeHero.module.css";
 
 const HomeHero = () => {
