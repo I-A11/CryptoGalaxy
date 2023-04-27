@@ -69,7 +69,7 @@ const Feature = () => {
             <Image
               className={styles.featuresCardsImage}
               src={Security}
-              width={300}
+              width={290}
               alt='Security image'
             />
             <div className='underlineGray'></div>
@@ -81,6 +81,7 @@ const Feature = () => {
           </div>
         </div>
       </div>
+      <div className='underline underline-center'></div>
     </div>
   );
 };

@@ -27,7 +27,8 @@
 }
 
 .thirdRow {
-  margin-top: -12rem;
+  margin: -12rem auto 0;
+  width: 85%;
 }
 
 .featuresCards {
@@ -60,6 +61,7 @@
 
   .thirdRow {
     margin-top: 0rem;
+    width: 100%;
   }
 }
 
