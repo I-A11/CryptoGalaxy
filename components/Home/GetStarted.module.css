@@ -1,0 +1,48 @@
+.getStartedHeading {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.getStartedContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.getStartedCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.getStartedCard h3 {
+  margin: 3rem 0 1.5rem;
+  font-size: 1.4rem;
+  color: var(--gray-800);
+}
+
+.getStartedCard p {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  .getStartedContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .getStartedHeading {
+    font-size: 2rem;
+  }
+
+  .getStartedCard h3 {
+    font-size: 1.2rem;
+  }
+}
