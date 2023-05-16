@@ -39,7 +39,7 @@
 }
 
 .navCenter {
-  max-width: 1170px;
+  /* max-width: 1170px; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -81,7 +81,7 @@
   background: transparent;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1042px) {
   .navToggle {
     display: flex;
     font-size: 1.8rem;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CoinCard from "./CoinCard";
-import { useGlobalContext } from "@/context/context";
+// import { useGlobalContext } from "@/context/context";
+import useAxios from "@/hooks/useAxios";
 import styles from "./HomeCoinsCards.module.css";
 
 import "slick-carousel/slick/slick.css";
@@ -8,7 +9,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const HomeCoinsCards = () => {
-  const { coins, loading } = useGlobalContext();
+  const { response, loading } = useAxios(
+    "coins/markets?vs_currency=aud&order=market_cap_desc&per_page=10&page=1&sparkline=false&locale=en"
+  );
+
   // Slick-Slider setting
   const settings = {
     dots: true,
@@ -30,10 +34,10 @@ const HomeCoinsCards = () => {
   }
 
   return (
-    <div className='section'>
+    <div className="section">
       <section className={styles.coinsContainer}>
         <h2>
-          <span className='text-gradient'>Cryptocurrency</span> Live Pricing
+          <span className="text-gradient">Cryptocurrency</span> Live Pricing
         </h2>
         <p>
           There are many variations of passages of Lorem Ipsum available, but
@@ -45,14 +49,14 @@ const HomeCoinsCards = () => {
         </p>
         <div className={styles.cardSlider}>
           <Slider {...settings}>
-            {coins.map((coin) => {
+            {response.map((coin) => {
               const { id } = coin;
               return <CoinCard key={id} {...coin} />;
             })}
           </Slider>
         </div>
       </section>
-      <div className='underline underline-center'></div>
+      <div className="underline underline-center"></div>
     </div>
   );
 };
