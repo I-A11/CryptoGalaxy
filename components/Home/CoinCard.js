@@ -1,10 +1,6 @@
 import Image from "next/image";
+import { priceFormat } from "@/utils/utils";
 import styles from "./CoinCard.module.css";
-
-const priceFormat = new Intl.NumberFormat("en-us", {
-  style: "currency",
-  currency: "AUD",
-});
 
 const CoinCard = ({
   id,

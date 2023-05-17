@@ -1,6 +1,7 @@
 /* Variables */
 
 :root {
+  --gray-200: #ccd1d6;
   --gray-400: #838c96;
   --gray-700: #414b56;
   --gray-800: #1f2937;
@@ -123,4 +124,23 @@ p {
 
 .primaryBtn:hover {
   background: var(--orange-background);
+}
+
+.red {
+  color: var(--red);
+}
+.green {
+  color: var(--green);
+}
+
+.coinPriceChange {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .coinPriceChange {
+    display: none;
+  }
 }
