@@ -39,6 +39,10 @@
   background: var(--orange-background);
 }
 
+.coinMarket {
+  font-weight: 500;
+}
+
 @media (max-width: 600px) {
   .coinContainer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
