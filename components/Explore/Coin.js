@@ -27,7 +27,9 @@ const Coin = ({ coin }) => {
           {priceChange < 0 ? <BsArrowDownRight /> : <BsArrowUpRight />}
           {priceChange}
         </div>
-        <button className={styles.coinInfo}>info</button>
+        <Link className={styles.coinInfo} href={`/details/${id}`}>
+          info
+        </Link>
       </div>
     </div>
   );

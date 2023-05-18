@@ -1,6 +1,6 @@
 import useAxios from "@/hooks/useAxios";
 import styles from "./explore.module.css";
-import Coin from "@/components/Home/Explore/Coin";
+import Coin from "@/components/Explore/Coin";
 import GetStarted from "@/components/Home/GetStarted";
 
 const Explore = () => {

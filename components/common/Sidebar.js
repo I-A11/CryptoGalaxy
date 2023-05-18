@@ -20,7 +20,7 @@ const Sidebar = () => {
         }
       >
         <div className={styles.sidebarHeader}>
-          <Link className={styles.logo} href='/'>
+          <Link className={styles.logo} href="/">
             <span className={styles.logoIcon}>
               <BsRocketTakeoff size={30} />
             </span>
@@ -33,25 +33,25 @@ const Sidebar = () => {
         <div className={styles.linksContainer}>
           <ul className={styles.links}>
             <li>
-              <Link className={styles.link} href='/features'>
+              <Link className={styles.link} href="/">
                 <MdOutlineFeaturedPlayList />
-                Features
+                Home
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href='/explore'>
+              <Link className={styles.link} href="/explore">
                 <MdTravelExplore />
                 Explore
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href='/blog'>
+              <Link className={styles.link} href="/blog">
                 <SiBlogger />
                 Blog
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href='/wallet'>
+              <Link className={styles.link} href="/wallet">
                 <BsWallet />
                 Wallet
               </Link>
