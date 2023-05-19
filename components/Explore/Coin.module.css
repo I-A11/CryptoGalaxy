@@ -24,17 +24,6 @@
   display: flex;
 }
 
-.coinInfo {
-  background: var(--background);
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  color: var(--white);
-  border-radius: 2rem;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-}
-
 .coinInfo:hover {
   background: var(--orange-background);
 }
@@ -52,6 +41,7 @@
   .coinContainer {
     padding: 1.2rem 0.5rem;
     font-size: 0.8rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .coinDetails {
@@ -64,9 +54,6 @@
   }
 
   .coinInfo {
-    text-align: center;
-    background: var(--background);
-    padding: 0.75rem 0.1rem;
-    font-size: 0.8rem;
+    display: none;
   }
 }

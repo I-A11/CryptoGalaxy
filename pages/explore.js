@@ -15,6 +15,12 @@ const Explore = () => {
           <h1>
             Explore <span className="text-gradient">Markets</span>
           </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+            voluptatem quibusdam natus quasi officiis unde odio repellat rerum
+            aliquam accusantium?
+          </p>
           <div className="underline underline-center"></div>
           <div className={styles.coinsContainer}>
             {response &&

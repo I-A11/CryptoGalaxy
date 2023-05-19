@@ -27,7 +27,7 @@ const Coin = ({ coin }) => {
           {priceChange < 0 ? <BsArrowDownRight /> : <BsArrowUpRight />}
           {priceChange}
         </div>
-        <div>
+        <div className={styles.coinInfo}>
           <div className={styles.coinMarket}>Market Cap</div>
           <div>{priceFormat.format(market)}</div>
         </div>
