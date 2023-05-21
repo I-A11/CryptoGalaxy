@@ -1,4 +1,4 @@
-import Header from "../common/Header";
+import Header from "../common/Header-2";
 import Footer from "../common/Footer";
 const PageLayout = ({ children }) => {
   return (

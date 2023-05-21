@@ -1,0 +1,168 @@
+.header {
+  background: var(--background);
+  box-shadow: var(--light-shadow);
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.navbar {
+  padding: 1.5rem 0;
+}
+
+.navSection {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.logoText {
+  color: var(--white);
+  font-size: 1.7rem;
+  letter-spacing: var(--spacing);
+  margin-bottom: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoIcon {
+  color: var(--orange);
+  margin-right: 5px;
+}
+
+.navContainer {
+  display: flex;
+  padding-left: 0.5rem;
+}
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 15rem;
+}
+
+.link {
+  color: var(--white);
+  padding-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.link:hover {
+  color: var(--orange);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.login,
+.signUp {
+  background: var(--orange-background);
+  border: transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.login {
+  background: transparent;
+}
+
+.navToggle {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--white);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+/* Mobile navbar */
+
+.mobileNavSection {
+  position: fixed;
+  top: 0;
+  width: 27rem;
+  height: 100%;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  box-shadow: var(--dark-shadow);
+  transition: var(--transition);
+  transform: translateX(-100%);
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.showMobileNavSection {
+  transform: translateX(0);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.mobileLogoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mobileNavClose {
+  color: var(--white);
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .mobileLogoContainer {
+    display: none;
+  }
+
+  .mobileNavSection {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navToggle {
+    display: flex;
+  }
+
+  .linksContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 486px) {
+  .login,
+  .signUp {
+    display: none;
+  }
+}
