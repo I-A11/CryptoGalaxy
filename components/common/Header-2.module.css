@@ -14,7 +14,7 @@
 .navSection {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 0.5rem;
 }
@@ -137,6 +137,61 @@
   font-size: 1.5rem;
 }
 
+.MobileLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.MobileLink {
+  color: var(--white);
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.MobileLink:hover {
+  background: #4353ff;
+  padding: 0.5rem 1.2rem;
+  transition: var(--transition);
+  border-radius: 15px;
+}
+
+.MobileLink svg {
+  font-size: 1.5rem;
+  color: var(--orange);
+  margin-right: 1rem;
+}
+
+.MobileUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.MobileLogin,
+.MobileSignUp {
+  background: var(--orange-background);
+  border: transparent;
+  padding: 1.2rem 0.75rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  color: var(--white);
+  width: 70%;
+  cursor: pointer;
+}
+
+.MobileLogin {
+  background: transparent;
+  border: solid 1px var(--white);
+}
+
+/* @media */
 @media (min-width: 1024px) {
   .mobileLogoContainer {
     display: none;
@@ -158,11 +213,23 @@
   .linksContainer {
     display: none;
   }
+
+  .navSection {
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 486px) {
   .login,
   .signUp {
     display: none;
+  }
+  .mobileNavSection {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .logoText {
+    font-size: 1.2rem;
   }
 }

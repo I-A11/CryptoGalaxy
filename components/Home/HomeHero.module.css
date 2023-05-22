@@ -12,7 +12,7 @@
 
 .textContainer h1 {
   letter-spacing: var(--spacing);
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .textContainer span {
   color: var(--gray-800);
@@ -21,14 +21,14 @@
 .textContainer h3 {
   color: var(--gray-800);
   letter-spacing: var(--spacing);
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .textContainer p {
   margin: 2rem 0;
 }
 
 .imgContainer {
-  width: 80%;
+  width: 70%;
 }
 
 @media (max-width: 1023px) {

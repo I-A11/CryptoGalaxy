@@ -24,10 +24,6 @@
   display: flex;
 }
 
-.coinInfo:hover {
-  background: var(--orange-background);
-}
-
 .coinMarket {
   font-weight: 500;
 }

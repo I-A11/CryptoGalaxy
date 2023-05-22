@@ -1,4 +1,3 @@
-import { AppProvider } from "@/context/context";
 import { Roboto } from "next/font/google";
 
 import PageLayout from "@/components/layout/PageLayout";
@@ -12,11 +11,9 @@ const roboto = Roboto({
 export default function App({ Component, pageProps }) {
   return (
     <main className={roboto.className}>
-      <AppProvider>
-        <PageLayout>
-          <Component {...pageProps} />
-        </PageLayout>
-      </AppProvider>
+      <PageLayout>
+        <Component {...pageProps} />
+      </PageLayout>
     </main>
   );
 }

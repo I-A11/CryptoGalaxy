@@ -1,6 +1,5 @@
 import { useState } from "react";
 import CoinCard from "./CoinCard";
-// import { useGlobalContext } from "@/context/context";
 import useAxios from "@/hooks/useAxios";
 import styles from "./HomeCoinsCards.module.css";
 
