@@ -13,6 +13,12 @@
   margin: 2rem auto;
 }
 
+.skeletonContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 .cardSlider {
   background: var(--background);
   height: 30rem;

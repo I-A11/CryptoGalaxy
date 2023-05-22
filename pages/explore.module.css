@@ -7,3 +7,9 @@
   margin: 2rem auto;
   width: 70%;
 }
+
+.skeletonContainer {
+  margin: 10rem auto 40rem;
+  display: flex;
+  justify-content: center;
+}

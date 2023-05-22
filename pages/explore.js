@@ -2,11 +2,22 @@ import useAxios from "@/hooks/useAxios";
 import styles from "./explore.module.css";
 import Coin from "@/components/Explore/Coin";
 import GetStarted from "@/components/Home/GetStarted";
+import Skeleton from "@/components/skelton";
 
 const Explore = () => {
   const { response, loading } = useAxios(
     "coins/markets?vs_currency=aud&order=market_cap_desc&per_page=15&page=1&sparkline=false&locale=en"
   );
+
+  if (loading) {
+    return (
+      <div className="section">
+        <div className={styles.skeletonContainer}>
+          <Skeleton />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="section">

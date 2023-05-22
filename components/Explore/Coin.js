@@ -14,6 +14,7 @@ const Coin = ({ coin }) => {
     price_change_percentage_24h: priceChange,
     market_cap: market,
   } = coin;
+
   return (
     <div className="section">
       <div className={styles.coinContainer}>

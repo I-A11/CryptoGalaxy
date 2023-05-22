@@ -1,6 +1,6 @@
-import { useState } from "react";
 import CoinCard from "./CoinCard";
 import useAxios from "@/hooks/useAxios";
+import Skeleton from "../skelton";
 import styles from "./HomeCoinsCards.module.css";
 
 import "slick-carousel/slick/slick.css";
@@ -26,8 +26,10 @@ const HomeCoinsCards = () => {
 
   if (loading) {
     return (
-      <div>
-        <h1>Loading</h1>
+      <div className="section">
+        <div className={styles.skeletonContainer}>
+          <Skeleton />
+        </div>
       </div>
     );
   }
@@ -46,6 +48,7 @@ const HomeCoinsCards = () => {
           a quo atque, cum explicabo laborum minus omnis! Quisquam autem quo non
           dolor soluta.
         </p>
+
         <div className={styles.cardSlider}>
           <Slider {...settings}>
             {response.map((coin) => {
