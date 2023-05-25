@@ -25,4 +25,4 @@ Build up CryptoGalaxy project using:.\
 React hooks: UseState, UseEffect, and custom hooks.\
 Project is a Crypto App where you can see crypto coins and track its prices.\
 Using axios to fetch coingecko api and different information for cryptocurrency .\
-Using slick-carousel to create coin card slider .\
+Using slick-carousel to create coin card slider.
