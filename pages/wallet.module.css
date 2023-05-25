@@ -1,0 +1,67 @@
+.walletContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  gap: 2rem;
+}
+
+.walletRow,
+.walletRowSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.walletRowText {
+  width: 50%;
+}
+.walletRowText p {
+  width: 80%;
+}
+.walletRowText h1 {
+  font-size: 3rem;
+}
+.walletRowText h2 {
+  font-size: 2.5rem;
+}
+.walletRowTextSec h2 {
+  font-size: 2.5rem;
+}
+
+.walletRowImg {
+  width: 40%;
+}
+
+.walletRowTextSec {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+@media (max-width: 900px) {
+  .walletContainer {
+    gap: 3rem;
+  }
+  .walletRow,
+  .walletRowSec {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .walletRowText p {
+    width: 100%;
+  }
+
+  .walletRowSec {
+    flex-direction: column-reverse;
+  }
+  .walletRowText,
+  .walletRowTextSec {
+    width: 80%;
+  }
+
+  .walletRowImg {
+    width: 60%;
+  }
+}

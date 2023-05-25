@@ -1,5 +1,5 @@
 import styles from "./skelton.module.css";
-const Skeleton = ({ className }) => {
+const Skeleton = () => {
   return (
     <div className={styles.skeletonAnimation}>
       <div className={styles.skeletonContainer}></div>
