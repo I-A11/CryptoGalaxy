@@ -6,6 +6,7 @@ import PageLayout from "@/components/layout/PageLayout";
 import HomeCoinsCards from "@/components/Home/HomeCoinsCards";
 import Features from "@/components/Home/Features";
 import GetStarted from "@/components/Home/GetStarted";
+import Calculator from "@/components/Home/Calculator";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
@@ -25,6 +26,7 @@ export default function Home() {
         <HomeHero />
         <HomeCoinsCards />
         <Features />
+        <Calculator />
         <GetStarted />
       </main>
     </>
