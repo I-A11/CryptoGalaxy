@@ -19,7 +19,7 @@ const Coin = ({ coin }) => {
     <div className="section">
       <div className={styles.coinContainer}>
         <div className={styles.coinDetails}>
-          <Image src={image} alt={name} width={25} height={25} />
+          {/* <Image src={image} alt={name} width={25} height={25} /> */}
           <div>{name}</div>
           <span className={styles.coinSymbol}>({symbol})</span>
         </div>

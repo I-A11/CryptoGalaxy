@@ -16,7 +16,7 @@ const CoinCard = ({
   return (
     <div className={styles.cardContainer}>
       <div className={styles.cardHeader}>
-        <Image src={image} width={35} height={35} alt={name} />
+        {/* <Image src={image} width={35} height={35} alt={name} /> */}
         <div className={styles.coinName}>
           <div> {name}</div>
           <div className={styles.coinSymbol}>{symbol}</div>
