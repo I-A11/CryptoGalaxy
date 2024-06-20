@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { priceFormat } from "@/utils/utils";
 import styles from "./CoinCard.module.css";
+import coins from "@/assets/coins";
 
 const CoinCard = ({
   id,
@@ -13,10 +14,20 @@ const CoinCard = ({
   low_24h,
   market_cap,
 }) => {
+  const coinImage = coins.find((c) => c.alt === symbol.toLowerCase());
+
   return (
     <div className={styles.cardContainer}>
       <div className={styles.cardHeader}>
-        {/* <Image src={image} width={35} height={35} alt={name} /> */}
+        {coinImage && (
+          <Image
+            src={coinImage.src}
+            width={35}
+            height={35}
+            alt={coinImage.alt}
+          />
+        )}
+
         <div className={styles.coinName}>
           <div> {name}</div>
           <div className={styles.coinSymbol}>{symbol}</div>

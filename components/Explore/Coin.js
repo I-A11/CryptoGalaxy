@@ -4,6 +4,7 @@ import { priceFormat } from "@/utils/utils";
 import { BsArrowUpRight, BsArrowDownRight } from "react-icons/bs";
 import styles from "./Coin.module.css";
 import coins from "@/assets/coins";
+
 const Coin = ({ coin }) => {
   const {
     // image,
