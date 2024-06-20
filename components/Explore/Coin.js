@@ -3,10 +3,10 @@ import Image from "next/image";
 import { priceFormat } from "@/utils/utils";
 import { BsArrowUpRight, BsArrowDownRight } from "react-icons/bs";
 import styles from "./Coin.module.css";
-
+import coins from "@/assets/coins";
 const Coin = ({ coin }) => {
   const {
-    image,
+    // image,
     name,
     id,
     current_price: price,
@@ -15,11 +15,22 @@ const Coin = ({ coin }) => {
     market_cap: market,
   } = coin;
 
+  // Find correct image for image card.
+  const coinImage = coins.find((c) => c.alt === symbol.toLowerCase());
+
   return (
     <div className="section">
       <div className={styles.coinContainer}>
         <div className={styles.coinDetails}>
-          {/* <Image src={image} alt={name} width={25} height={25} /> */}
+          {coinImage && (
+            <Image
+              src={coinImage.src}
+              alt={coinImage.alt}
+              width={25}
+              height={25}
+            />
+          )}
+
           <div>{name}</div>
           <span className={styles.coinSymbol}>({symbol})</span>
         </div>
