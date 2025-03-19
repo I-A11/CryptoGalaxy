@@ -14,6 +14,8 @@ const coins = [
   { src: "/assets/coins/m-avax.jpeg", alt: "avax" },
   { src: "/assets/coins/n-trx.png", alt: "trx" },
   { src: "/assets/coins/o-wbtc.png", alt: "wbtc" },
+  { src: "/assets/coins/p-chainlink.png", alt: "link" },
+  { src: "/assets/coins/leo-token.png", alt: "leo" },
 ];
 
 export default coins;
